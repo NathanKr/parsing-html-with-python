@@ -13,4 +13,8 @@ title_element = title_elements[0]
 print(f'type(title_element) : {type(title_element)}') # class lxml.html.HtmlElement
 print(title_element.text_content()) # Example Domain
 
+#html_as_html_elements = doc.cssselect('html')
+# print(html_as_html_elements[0].text_content()) # the whole html 
+
+
 

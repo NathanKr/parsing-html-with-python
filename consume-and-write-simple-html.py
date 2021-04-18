@@ -7,9 +7,9 @@ html_doc = "<html><head><title>test</head><body><h1>טקסט בעברית</h3></
 to_string_encoding = 'unicode' #using utf-8 was not good here
 parser = etree.HTMLParser()
 htmlTree   = etree.parse(StringIO(html_doc), parser)
-print(f'type(htmlTree) : {type(htmlTree)}')
+print(f'type(htmlTree) : {type(htmlTree)}') #  lxml.etree._ElementTree
 strHtmlTree = etree.tostring(htmlTree.getroot(), encoding=to_string_encoding)
-print(f'type(strHtmlTree) : {type(strHtmlTree)}')
+print(f'type(strHtmlTree) : {type(strHtmlTree)}') # str
 print(strHtmlTree)
 
 # write html string to html file
